@@ -9,12 +9,20 @@ body {
 div {
   margin: 5px;
   padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .title-div {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
   text-align: center;
+}
+
+.intro-div {
+  width: 600px;
 }
 
 .image-div {
@@ -29,12 +37,28 @@ div {
   flex-direction: column;
   align-items: center;
   align-self: flex-end;
-  border: solid 2px goldenrod;
-  
+  justify-content: flex-end;
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 300px;
+  width: 200px;
+}
+
+.drop-down-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
   width: 200px;
   height: auto;
-  margin: 5px;
+  margin: 2px;
+}
+
+select {
+  margin: 10px;
+  font-size: larger;
+  border: darkblue solid 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
