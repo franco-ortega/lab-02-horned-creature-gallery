@@ -6,7 +6,7 @@ export default class ImageList extends Component {
     render() {
         console.log('Hi, ' + images);
         return (
-            <div className='creature-div'>
+            <div className='image-div'>
             {
                 images.map(item => 
                     <ImageItem

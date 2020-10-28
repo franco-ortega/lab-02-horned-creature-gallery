@@ -5,15 +5,10 @@ export default class ImageItem extends Component {
     render() {
         return (
             <div className='image-div'>
-                IMAGE ITEM TOP
-
-                <div>
-                    {this.props.keyword}
+                <div className='creature-div'>
                     <img src={this.props.url} alt={this.props.keyword}/>
+                    {this.props.keyword}
                 </div>
-
-
-                IMAGE ITEM BOTTOM
             </div>
 
 
