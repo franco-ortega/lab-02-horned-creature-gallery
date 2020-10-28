@@ -5,8 +5,14 @@ export default class ImageItem extends Component {
         return (
             <div className='image-div'>
                 <div className='creature-div'>
+                    <div className='creature-name-div'>
+                        {this.props.title}
+                    </div>
                     <img src={this.props.url} alt={this.props.keyword}/>
-                    {this.props.title}
+                    <div className='description-div'>
+                        "{this.props.description}."
+                    </div>
+                    
                 </div>
             </div>
         )
