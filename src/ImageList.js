@@ -4,15 +4,15 @@ import ImageItem from './ImageItem.js';
 export default class ImageList extends Component {
     render() {
       const filteredImages = this.props.images.filter((item) => {
-        if (!this.props.filter1 && !this.props.filter2 && !this.props.filter3 && !this.props.filter4) return true;
+        if (!this.props.filterKeyword && !this.props.filterHorns && !this.props.filterSkin && !this.props.filterFeet) return true;
   
-        if (item.keyword === this.props.filter1) return true;
+        if (item.keyword === this.props.filterKeyword) return true;
   
-        if (item.horns === Number(this.props.filter2)) return true;
+        if (item.horns === Number(this.props.filterHorns)) return true;
   
-        if (item.skin === this.props.filter3) return true;
+        if (item.skin === this.props.filterSkin) return true;
   
-        if (item.feet === this.props.filter4) return true;
+        if (item.feet === this.props.filterFeet) return true;
   
         return false;
       })
