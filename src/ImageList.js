@@ -1,24 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ImageItem from './ImageItem.js';
 import images from './Data.js';
 
 export default class ImageList extends Component {
     render() {
+        console.log('Hi, ' + images);
         return (
-            <div className='image-div'>
-                {images[0].keyword}
-                <img src={images[0].url} alt='{images[0.keyword}' />
-                {images[1].keyword}
-                <img src={images[1].url} alt='{images[0.keyword}' />
-                {images[2].keyword}
-                <img src={images[2].url} alt='{images[0.keyword}' />
-                {images[3].keyword}
-                <img src={images[3].url} alt='{images[0.keyword}' />
-                {images[4].keyword}
-                <img src={images[4].url} alt='{images[0.keyword}' />
-                {images[5].keyword}
-                <img src={images[5].url} alt='{images[0.keyword}' />
-                {images[6].keyword}
-                <img src={images[6].url} alt='{images[0.keyword}' />
+            <div className='creature-div'>
+            {
+                images.map(item => 
+                    <ImageItem
+                    keyword={item.keyword}
+                    url={item.url}
+                    />
+                )
+            }
             </div>
         )
     }

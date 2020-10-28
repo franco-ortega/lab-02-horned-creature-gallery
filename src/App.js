@@ -1,9 +1,9 @@
-//import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
 import Header from './Header.js';
-import ImageList from './ImageList.js';
-import images from './Data.js';
+//import ImageItem from './ImageItem.js';
+import ImageList from './ImageList.js'
+
 
 export default class App extends Component {
   render() {
@@ -11,7 +11,6 @@ export default class App extends Component {
       <div>
         <Header />
         <ImageList />
-        <images />
       </div>
     )
   }
